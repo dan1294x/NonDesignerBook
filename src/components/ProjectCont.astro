@@ -1,0 +1,32 @@
+---
+import OldProject from "./OldProject.astro"
+import NewProject from "./NewProject.astro"
+---
+<style> 
+    .project-cont {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        justify-content:space-evenly;
+    }
+
+    .project { 
+        width: 400px;
+        height: 500px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+</style>
+<div class="project-cont">
+    <div class="old project">
+        <OldProject/>
+    </div>
+    <div class="new project">
+        <NewProject/>
+    </div>
+</div>
