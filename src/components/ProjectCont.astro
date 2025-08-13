@@ -14,8 +14,16 @@ import NewProject from "./NewProject.astro"
         justify-content:space-evenly;
     }
 
+    @media (max-width: 900px) {
+        .project-cont {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
     .project { 
-        width: 400px;
+        max-width: 400px;
+        min-width: 400px;
         height: 500px;
         border: 1px solid #ccc;
         border-radius: 8px;
